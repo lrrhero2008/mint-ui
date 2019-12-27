@@ -80,12 +80,16 @@
         pages: [],
         timer: null,
         reInitTimer: null,
-        noDrag: false,
+        noDrag: this.newNoDrag,
         isDone: false
       };
     },
 
     props: {
+      newNoDrag: {
+        type: Boolean,
+        default: true
+      },
       speed: {
         type: Number,
         default: 300

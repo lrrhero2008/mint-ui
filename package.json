@@ -1,5 +1,5 @@
 {
-  "name": "mint-ui",
+  "name": "sp-mint-ui",
   "version": "2.2.13",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
@@ -76,5 +76,9 @@
     "webpack": "beta",
     "webpack-dev-server": "beta",
     "webpack-shell-plugin": "^0.4.3"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   }
 }
