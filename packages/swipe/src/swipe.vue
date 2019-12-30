@@ -80,7 +80,6 @@
         pages: [],
         timer: null,
         reInitTimer: null,
-        noDrag: this.newNoDrag,
         isDone: false
       };
     },
@@ -88,7 +87,7 @@
     props: {
       newNoDrag: {
         type: Boolean,
-        default: true
+        default: false
       },
       speed: {
         type: Number,
@@ -223,8 +222,6 @@
 
       reInitPages() {
         var children = this.$children;
-        this.noDrag = children.length === 1 && this.noDragWhenSingle;
-
         var pages = [];
         var intDefaultIndex = Math.floor(this.defaultIndex);
         var defaultIndex = (intDefaultIndex >= 0 && intDefaultIndex < children.length) ? intDefaultIndex : 0;
@@ -515,7 +512,7 @@
       },
 
       initTimer() {
-        if (this.auto > 0 && !this.timer) {
+        if (this.auto > 0 && !this.timer && !this.noDrag) {
           this.timer = setInterval(() => {
             if (!this.continuous && (this.index >= this.pages.length - 1)) {
               return this.clearTimer();
@@ -578,6 +575,17 @@
         this.doOnTouchEnd(event);
         this.dragging = false;
       });
+    },
+    computed: {
+      noDrag() {
+        var children = this.$children;
+        if (children.length === 1 && this.noDragWhenSingle) {
+          return false;
+        } else {
+          return this.newNoDrag;
+        }
+
+      }
     }
   };
 </script>
