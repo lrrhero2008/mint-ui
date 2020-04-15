@@ -1,6 +1,6 @@
 {
   "name": "sp-mint-ui",
-  "version": "2.2.16",
+  "version": "2.2.17",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
@@ -28,18 +28,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElemeFE/mint-ui.git"
+    "url": "git+https://github.com/lrrhero2008/mint-ui"
   },
-  "homepage": "https://github.com/ElemeFE/mint-ui#readme",
+  "homepage": "https://github.com/lrrhero2008/mint-ui",
   "bugs": {
-    "url": "https://github.com/ElemeFE/mint-ui/issues"
+    "url": "https://github.com/lrrhero2008/mint-ui/issues"
   },
   "author": "elemefe",
   "license": "MIT",
   "dependencies": {
     "array-find-index": "^1.0.2",
     "raf.js": "0.0.4",
-    "vue-lazyload": "^1.0.1"
+    "vue-lazyload": "^1.2.6"
   },
   "peerDependencies": {
     "vue": "^2.3.0"
