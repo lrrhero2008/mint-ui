@@ -1,6 +1,6 @@
 {
   "name": "sp-mint-ui",
-  "version": "2.2.17",
+  "version": "2.2.18",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
@@ -39,7 +39,7 @@
   "dependencies": {
     "array-find-index": "^1.0.2",
     "raf.js": "0.0.4",
-    "vue-lazyload": "^1.2.6"
+    "vue-lazyload": "^1.2.4"
   },
   "peerDependencies": {
     "vue": "^2.3.0"
