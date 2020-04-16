@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/lrrhero2008/mint-ui/issues"
   },
-  "author": "elemefe",
+  "author": "lrrhero2008",
   "license": "MIT",
   "dependencies": {
     "array-find-index": "^1.0.2",
