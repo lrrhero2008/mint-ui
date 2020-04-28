@@ -439,12 +439,16 @@
 
         var distanceX = Math.abs(offsetLeft);
         var distanceY = Math.abs(offsetTop);
+
         if (distanceX < 5 || (distanceX >= 5 && distanceY >= 1.73 * distanceX)) {
           this.userScrolling = true;
           return;
         } else {
           this.userScrolling = false;
-          event.preventDefault();
+          if (event.cancelable) {
+            event.preventDefault();
+          }
+
         }
         offsetLeft = Math.min(Math.max(-dragState.pageWidth + 1, offsetLeft), dragState.pageWidth - 1);
 
